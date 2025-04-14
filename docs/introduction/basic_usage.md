@@ -81,7 +81,7 @@ The output should look something like this:
 
 First, an environment is created using :meth:`make` with an additional keyword ``"render_mode"`` that specifies how the environment should be visualized. See :meth:`Env.render` for details on the default meaning of different render modes. In this example, we use the ``"LunarLander"`` environment where the agent controls a spaceship that needs to land safely.
 
-After initializing the environment, we :meth:`Env.reset` the environment to get the first observation of the environment along with an additional information. For initializing the environment with a particular random seed or options (see the environment documentation for possible values) use the ``seed`` or ``options`` parameters with :meth:`reset`.
+After initializing the environment, we :meth:`Env.reset` the environment to get the first observation of the environment along with additional information. For initializing the environment with a particular random seed or options (see the environment documentation for possible values) use the ``seed`` or ``options`` parameters with :meth:`reset`.
 
 As we wish to continue the agent-environment loop until the environment ends, which is in an unknown number of timesteps, we define ``episode_over`` as a variable to know when to stop interacting with the environment along with a while loop that uses it.
 
